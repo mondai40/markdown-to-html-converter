@@ -1,0 +1,195 @@
+<h1>マークダウン記法サンプル</h1>
+<p>このファイルはマークダウンの主要な記法をまとめたサンプルです。</p>
+<h2>見出し（Headers）</h2>
+<h1>見出し1 (H1)</h1>
+<h2>見出し2 (H2)</h2>
+<h3>見出し3 (H3)</h3>
+<h4>見出し4 (H4)</h4>
+<h5>見出し5 (H5)</h5>
+<h6>見出し6 (H6)</h6>
+<h2>テキスト装飾</h2>
+<p><strong>太字（Bold）</strong><br />
+<em>斜体（Italic）</em><br />
+<strong><em>太字かつ斜体</em></strong><br />
+~~取り消し線~~<br />
+<code>インラインコード</code></p>
+<h2>リスト</h2>
+<h3>順序なしリスト（Unordered List）</h3>
+<ul>
+<li>項目1</li>
+<li>項目2</li>
+<li>サブ項目2-1</li>
+<li>サブ項目2-2<ul>
+<li>サブサブ項目2-2-1</li>
+</ul>
+</li>
+<li>項目3</li>
+</ul>
+<h3>順序ありリスト（Ordered List）</h3>
+<ol>
+<li>第一項目</li>
+<li>第二項目</li>
+<li>サブ項目2-1</li>
+<li>サブ項目2-2</li>
+<li>第三項目</li>
+</ol>
+<h3>チェックリスト（Task List）</h3>
+<ul>
+<li>[x] 完了済みタスク</li>
+<li>[ ] 未完了タスク</li>
+<li>[x] もう一つの完了済みタスク</li>
+<li>[ ] まだやることがある項目</li>
+</ul>
+<h2>テーブル（Table）</h2>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>価格</th>
+<th>在庫</th>
+<th>評価</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>iPhone 15</td>
+<td>¥124,800</td>
+<td>在庫あり</td>
+<td>⭐⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td>MacBook Air</td>
+<td>¥164,800</td>
+<td>残りわずか</td>
+<td>⭐⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td>AirPods Pro</td>
+<td>¥39,800</td>
+<td>在庫あり</td>
+<td>⭐⭐⭐⭐</td>
+</tr>
+</tbody>
+</table>
+<h3>表の配置指定</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">左寄せ</th>
+<th style="text-align: center;">中央寄せ</th>
+<th style="text-align: right;">右寄せ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Left</td>
+<td style="text-align: center;">Center</td>
+<td style="text-align: right;">Right</td>
+</tr>
+<tr>
+<td style="text-align: left;">左</td>
+<td style="text-align: center;">中央</td>
+<td style="text-align: right;">右</td>
+</tr>
+<tr>
+<td style="text-align: left;">A</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: right;">C</td>
+</tr>
+</tbody>
+</table>
+<h2>リンクと画像</h2>
+<h3>リンク</h3>
+<p><a href="https://www.google.com">Google</a><br />
+<a href="https://github.com" title="GitHubのホームページ">GitHub</a><br />
+<a href="https://www.example.com">https://www.example.com</a></p>
+<h3>画像</h3>
+<p><img alt="代替テキスト" src="https://via.placeholder.com/300x200/0066cc/ffffff?text=Sample+Image" title="サンプル画像" /></p>
+<h2>引用（Blockquote）</h2>
+<blockquote>
+<p>これは引用文です。<br />
+複数行にわたる引用も可能です。</p>
+<blockquote>
+<p>ネストした引用もできます。</p>
+</blockquote>
+</blockquote>
+<h2>コードブロック</h2>
+<h3>インラインコード</h3>
+<p><code>console.log("Hello, World!");</code></p>
+<h3>コードブロック（言語指定なし）</h3>
+<pre><code>function hello() {
+    console.log(&quot;Hello, World!&quot;);
+}
+</code></pre>
+<h3>コードブロック（言語指定あり）</h3>
+<pre><code class="language-javascript">function calculateSum(a, b) {
+    return a + b;
+}
+
+const result = calculateSum(5, 3);
+console.log(`結果: ${result}`);
+</code></pre>
+<pre><code class="language-python">def calculate_sum(a, b):
+    return a + b
+
+result = calculate_sum(5, 3)
+print(f&quot;結果: {result}&quot;)
+</code></pre>
+<pre><code class="language-bash"># ファイルの一覧表示
+ls -la
+
+# ディレクトリの作成
+mkdir new_directory
+
+# ファイルのコピー
+cp source.txt destination.txt
+</code></pre>
+<h2>水平線</h2>
+<hr />
+<hr />
+<hr />
+<h2>エスケープ文字</h2>
+<p>*アスタリスクをそのまま表示*<br />
+`バッククォートをそのまま表示`<br />
+# ハッシュをそのまま表示</p>
+<h2>改行</h2>
+<p>行末に2つのスペースを入れると改行できます。<br />
+このように次の行に移ります。</p>
+<p>または空行を入れることで</p>
+<p>段落を分けることができます。</p>
+<h2>注釈・脚注</h2>
+<p>ここに注釈があります<a href="これは最初の注釈です。">^1</a>。<br />
+別の注釈もあります<a href="これは名前付きの注釈です。">^note</a>。</p>
+<h2>HTMLタグの使用</h2>
+<p>マークダウン内でHTMLタグも使用できます：</p>
+<details>
+<summary>詳細を表示</summary>
+
+この内容は折りたたまれています。クリックすると表示されます。
+
+- リスト項目1
+- リスト項目2
+</details>
+
+<p><kbd>Ctrl</kbd> + <kbd>C</kbd> でコピーできます。</p>
+<h2>数式（対応している場合）</h2>
+<p>インライン数式: $E = mc^2$</p>
+<p>ブロック数式:
+$$
+\sum_{i=1}^{n} x_i = x_1 + x_2 + \cdots + x_n
+$$</p>
+<h2>絵文字</h2>
+<p><img alt="😄" class="gemoji" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/svg/1f604.svg" title=":smile:" /> <img alt="❤️" class="gemoji" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/svg/2764.svg" title=":heart:" /> <img alt="👍" class="gemoji" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/svg/1f44d.svg" title=":thumbsup:" /> <img alt="🚀" class="gemoji" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/svg/1f680.svg" title=":rocket:" /> <img alt="💻" class="gemoji" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/svg/1f4bb.svg" title=":computer:" /></p>
+<h2>まとめ</h2>
+<p>このサンプルには以下の要素が含まれています：</p>
+<ol>
+<li><strong>見出し</strong> - H1からH6まで</li>
+<li><strong>リスト</strong> - 順序あり・なし・チェックリスト</li>
+<li><strong>テーブル</strong> - 基本的な表と配置指定</li>
+<li>テキスト装飾</li>
+<li>リンクと画像</li>
+<li>引用</li>
+<li>コードブロック</li>
+<li>その他の記法</li>
+</ol>
+<p>これらの記法をマスターすることで、読みやすく構造化された文書を作成できます。</p>
